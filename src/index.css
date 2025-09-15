@@ -1,0 +1,1006 @@
+@import "tailwindcss";
+
+button {
+  cursor: pointer;
+}
+
+/* Water Wave Animations */
+@keyframes wave-1 {
+  0%, 100% {
+    transform: translateX(-100%) scaleY(1);
+    opacity: 0.7;
+  }
+  25% {
+    transform: translateX(-50%) scaleY(1.05) rotateZ(0.5deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateX(0%) scaleY(1.1) rotateZ(0deg);
+    opacity: 0.9;
+  }
+  75% {
+    transform: translateX(50%) scaleY(1.05) rotateZ(-0.5deg);
+    opacity: 0.8;
+  }
+}
+
+@keyframes wave-2 {
+  0%, 100% {
+    transform: translateX(-120%) scaleY(0.9) rotateZ(-0.3deg);
+    opacity: 0.6;
+  }
+  30% {
+    transform: translateX(-60%) scaleY(1.15) rotateZ(0.3deg);
+    opacity: 0.8;
+  }
+  60% {
+    transform: translateX(0%) scaleY(1.2) rotateZ(0deg);
+    opacity: 0.9;
+  }
+  80% {
+    transform: translateX(40%) scaleY(1.1) rotateZ(-0.2deg);
+    opacity: 0.7;
+  }
+}
+
+@keyframes wave-3 {
+  0%, 100% {
+    transform: translateX(-80%) scaleY(0.8) rotateZ(0.2deg);
+    opacity: 0.5;
+  }
+  20% {
+    transform: translateX(-40%) scaleY(1.25) rotateZ(-0.4deg);
+    opacity: 0.7;
+  }
+  40% {
+    transform: translateX(0%) scaleY(1.3) rotateZ(0deg);
+    opacity: 0.8;
+  }
+  60% {
+    transform: translateX(30%) scaleY(1.2) rotateZ(0.3deg);
+    opacity: 0.7;
+  }
+  80% {
+    transform: translateX(60%) scaleY(1.1) rotateZ(-0.2deg);
+    opacity: 0.6;
+  }
+}
+
+/* Bubble Rising Animations */
+@keyframes bubble-rise-1 {
+  0% {
+    transform: translateY(0px) translateX(0px) scale(0.8);
+    opacity: 0.9;
+  }
+  25% {
+    transform: translateY(-25vh) translateX(10px) scale(1.1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-50vh) translateX(-5px) scale(1.3);
+    opacity: 0.6;
+  }
+  75% {
+    transform: translateY(-75vh) translateX(8px) scale(1.5);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(-2px) scale(1.7);
+    opacity: 0;
+  }
+}
+
+
+
+@keyframes bubble-rise-4 {
+  0% {
+    transform: translateY(0px) translateX(0px) scale(1.0);
+    opacity: 0.6;
+  }
+  35% {
+    transform: translateY(-35vh) translateX(18px) scale(1.3);
+    opacity: 0.5;
+  }
+  65% {
+    transform: translateY(-65vh) translateX(-10px) scale(1.6);
+    opacity: 0.3;
+  }
+  90% {
+    transform: translateY(-90vh) translateX(7px) scale(1.9);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(-5px) scale(2.1);
+    opacity: 0;
+  }
+}
+
+@keyframes bubble-rise-5 {
+  0% {
+    transform: translateY(0px) translateX(0px) scale(0.9);
+    opacity: 0.9;
+  }
+  40% {
+    transform: translateY(-40vh) translateX(-12px) scale(1.2);
+    opacity: 0.7;
+  }
+  75% {
+    transform: translateY(-75vh) translateX(9px) scale(1.5);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(-6px) scale(1.8);
+    opacity: 0;
+  }
+}
+
+@keyframes bubble-rise-6 {
+  0% {
+    transform: translateY(0px) translateX(0px) scale(0.7);
+    opacity: 0.5;
+  }
+  25% {
+    transform: translateY(-25vh) translateX(14px) scale(1.0);
+    opacity: 0.4;
+  }
+  55% {
+    transform: translateY(-55vh) translateX(-7px) scale(1.3);
+    opacity: 0.2;
+  }
+  80% {
+    transform: translateY(-80vh) translateX(11px) scale(1.6);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(-9px) scale(1.9);
+    opacity: 0;
+  }
+}
+
+@keyframes bubble-rise-7 {
+  0% {
+    transform: translateY(0px) translateX(0px) scale(1.1);
+    opacity: 0.8;
+  }
+  30% {
+    transform: translateY(-30vh) translateX(-6px) scale(1.4);
+    opacity: 0.6;
+  }
+  60% {
+    transform: translateY(-60vh) translateX(4px) scale(1.7);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(-2px) scale(2.0);
+    opacity: 0;
+  }
+}
+
+@keyframes bubble-rise-8 {
+  0% {
+    transform: translateY(0px) translateX(0px) scale(0.8);
+    opacity: 0.6;
+  }
+  20% {
+    transform: translateY(-20vh) translateX(16px) scale(1.1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(-50vh) translateX(-11px) scale(1.4);
+    opacity: 0.3;
+  }
+  75% {
+    transform: translateY(-75vh) translateX(8px) scale(1.7);
+    opacity: 0.15;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(-4px) scale(2.0);
+    opacity: 0;
+  }
+}
+
+@keyframes bubble-rise-9 {
+  0% {
+    transform: translateY(0px) translateX(0px) scale(0.9);
+    opacity: 0.9;
+  }
+  35% {
+    transform: translateY(-35vh) translateX(-13px) scale(1.2);
+    opacity: 0.7;
+  }
+  70% {
+    transform: translateY(-70vh) translateX(10px) scale(1.5);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(-7px) scale(1.8);
+    opacity: 0;
+  }
+}
+
+@keyframes bubble-rise-10 {
+  0% {
+    transform: translateY(0px) translateX(0px) scale(0.6);
+    opacity: 0.5;
+  }
+  40% {
+    transform: translateY(-40vh) translateX(20px) scale(0.9);
+    opacity: 0.4;
+  }
+  70% {
+    transform: translateY(-70vh) translateX(-12px) scale(1.2);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(8px) scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* Animation Classes */
+.animate-wave-1 {
+  animation: wave-1 16s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+
+.animate-wave-2 {
+  animation: wave-2 20s cubic-bezier(0.23, 1, 0.32, 1) infinite;
+  animation-delay: -4s;
+}
+
+.animate-wave-3 {
+  animation: wave-3 24s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+  animation-delay: -8s;
+}
+
+.animate-wave-foam {
+  animation: wave-foam 18s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  animation-delay: -2s;
+}
+
+.animate-bubble-1 {
+  animation: bubble-rise-1 18s ease-out infinite;
+  animation-delay: 0s;
+}
+
+.animate-bubble-2 {
+  animation: bubble-rise-2 22s ease-out infinite;
+  animation-delay: -2.5s;
+}
+
+.animate-bubble-3 {
+  animation: bubble-rise-3 15s ease-out infinite;
+  animation-delay: -5s;
+}
+
+.animate-bubble-4 {
+  animation: bubble-rise-4 25s ease-out infinite;
+  animation-delay: -1.2s;
+}
+
+.animate-bubble-5 {
+  animation: bubble-rise-5 19s ease-out infinite;
+  animation-delay: -3.8s;
+}
+
+.animate-bubble-6 {
+  animation: bubble-rise-6 16s ease-out infinite;
+  animation-delay: -6.2s;
+}
+
+.animate-bubble-7 {
+  animation: bubble-rise-7 20s ease-out infinite;
+  animation-delay: -1.8s;
+}
+
+.animate-bubble-8 {
+  animation: bubble-rise-8 24s ease-out infinite;
+  animation-delay: -4.1s;
+}
+
+.animate-bubble-9 {
+  animation: bubble-rise-9 17s ease-out infinite;
+  animation-delay: -2.9s;
+}
+
+.animate-bubble-10 {
+  animation: bubble-rise-10 26s ease-out infinite;
+  animation-delay: -5.5s;
+}
+
+.animate-caustic-light {
+  animation: caustic-light 25s ease-in-out infinite;
+}
+
+.animate-water-ripple {
+  animation: water-ripple 8s ease-out infinite;
+}
+/* Additional realistic bubble animations */
+@keyframes bubble-rise-2 {
+  0% {
+    transform: translateY(0px) translateX(0px) scale(1.0) rotateZ(0deg);
+    opacity: 0.6;
+    filter: blur(0.8px);
+  }
+  15% {
+    transform: translateY(-15vh) translateX(-12px) scale(1.3) rotateZ(60deg);
+    opacity: 0.7;
+    filter: blur(0.5px);
+  }
+  35% {
+    transform: translateY(-35vh) translateX(18px) scale(1.5) rotateZ(120deg);
+    opacity: 0.6;
+    filter: blur(0.3px);
+  }
+  55% {
+    transform: translateY(-55vh) translateX(-10px) scale(1.7) rotateZ(180deg);
+    opacity: 0.4;
+    filter: blur(0.1px);
+  }
+  75% {
+    transform: translateY(-75vh) translateX(14px) scale(1.9) rotateZ(240deg);
+    opacity: 0.2;
+    filter: blur(0.3px);
+  }
+  100% {
+    transform: translateY(-100vh) translateX(-6px) scale(2.2) rotateZ(360deg);
+    opacity: 0;
+    filter: blur(0.8px);
+  }
+}
+
+@keyframes bubble-rise-3 {
+  0% {
+    transform: translateY(0px) translateX(0px) scale(0.7) rotateZ(0deg);
+    opacity: 0.9;
+    filter: blur(0.3px);
+  }
+  20% {
+    transform: translateY(-20vh) translateX(8px) scale(1.0) rotateZ(72deg);
+    opacity: 0.8;
+    filter: blur(0.2px);
+  }
+  45% {
+    transform: translateY(-45vh) translateX(-14px) scale(1.3) rotateZ(144deg);
+    opacity: 0.6;
+    filter: blur(0.1px);
+  }
+  70% {
+    transform: translateY(-70vh) translateX(11px) scale(1.6) rotateZ(216deg);
+    opacity: 0.3;
+    filter: blur(0.2px);
+  }
+  100% {
+    transform: translateY(-100vh) translateX(-7px) scale(1.9) rotateZ(360deg);
+    opacity: 0;
+    filter: blur(0.6px);
+  }
+}
+
+/* Caustic light patterns for realistic underwater effect */
+@keyframes caustic-light {
+  0% {
+    transform: translateX(-100%) scaleX(1) scaleY(1) rotateZ(0deg);
+    opacity: 0.1;
+    filter: blur(3px);
+  }
+  25% {
+    transform: translateX(-50%) scaleX(1.2) scaleY(0.8) rotateZ(5deg);
+    opacity: 0.2;
+    filter: blur(2px);
+  }
+  50% {
+    transform: translateX(0%) scaleX(1.5) scaleY(1.2) rotateZ(0deg);
+    opacity: 0.3;
+    filter: blur(1px);
+  }
+  75% {
+    transform: translateX(50%) scaleX(1.1) scaleY(0.9) rotateZ(-3deg);
+    opacity: 0.2;
+    filter: blur(2px);
+  }
+  100% {
+    transform: translateX(100%) scaleX(1) scaleY(1) rotateZ(0deg);
+    opacity: 0.1;
+    filter: blur(3px);
+  }
+}
+
+/* Water ripple effect */
+@keyframes water-ripple {
+  0% {
+    transform: scale(0.8) rotateZ(0deg);
+    opacity: 0.6;
+    filter: blur(1px);
+  }
+  50% {
+    transform: scale(1.2) rotateZ(180deg);
+    opacity: 0.3;
+    filter: blur(2px);
+  }
+  100% {
+    transform: scale(1.5) rotateZ(360deg);
+    opacity: 0;
+    filter: blur(3px);
+  }
+}
+
+/* Enhanced Work Page Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(59, 130, 246, 0.6);
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-gradient-shift {
+  background-size: 200% 200%;
+  animation: gradient-shift 3s ease infinite;
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+.animation-delay-6000 {
+  animation-delay: 6s;
+}
+
+.animation-delay-8000 {
+  animation-delay: 8s;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom focus styles */
+.focus-ring {
+  @apply focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+}
+
+/* Masonry layout support */
+.masonry {
+  column-count: 1;
+  column-gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+@media (min-width: 1280px) {
+  .masonry {
+    column-count: 4;
+  }
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+}
+
+/* Text gradient utilities */
+.text-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glass morphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Hover effects */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Loading skeleton */
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* Custom line clamp utilities */
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.line-clamp-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+/* Enhanced Responsive Design Utilities */
+/* Mobile-first typography scaling */
+.text-responsive-xs {
+  @apply text-xs sm:text-sm md:text-base;
+}
+
+.text-responsive-sm {
+  @apply text-sm sm:text-base md:text-lg;
+}
+
+.text-responsive-base {
+  @apply text-base sm:text-lg md:text-xl;
+}
+
+.text-responsive-lg {
+  @apply text-lg sm:text-xl md:text-2xl;
+}
+
+.text-responsive-xl {
+  @apply text-xl sm:text-2xl md:text-3xl;
+}
+
+.text-responsive-2xl {
+  @apply text-2xl sm:text-3xl md:text-4xl;
+}
+
+.text-responsive-3xl {
+  @apply text-3xl sm:text-4xl md:text-5xl;
+}
+
+.text-responsive-4xl {
+  @apply text-4xl sm:text-5xl md:text-6xl;
+}
+
+.text-responsive-5xl {
+  @apply text-5xl sm:text-6xl md:text-7xl;
+}
+
+/* Mobile-optimized spacing */
+.space-responsive-sm {
+  @apply space-y-2 sm:space-y-3 md:space-y-4;
+}
+
+.space-responsive-md {
+  @apply space-y-4 sm:space-y-6 md:space-y-8;
+}
+
+.space-responsive-lg {
+  @apply space-y-6 sm:space-y-8 md:space-y-12;
+}
+
+.space-responsive-xl {
+  @apply space-y-8 sm:space-y-12 md:space-y-16;
+}
+
+/* Mobile-optimized padding */
+.p-responsive-sm {
+  @apply p-3 sm:p-4 md:p-6;
+}
+
+.p-responsive-md {
+  @apply p-4 sm:p-6 md:p-8;
+}
+
+.p-responsive-lg {
+  @apply p-6 sm:p-8 md:p-12;
+}
+
+.p-responsive-xl {
+  @apply p-8 sm:p-12 md:p-16;
+}
+
+/* Mobile-optimized margins */
+.m-responsive-sm {
+  @apply m-3 sm:m-4 md:m-6;
+}
+
+.m-responsive-md {
+  @apply m-4 sm:m-6 md:m-8;
+}
+
+.m-responsive-lg {
+  @apply m-6 sm:m-8 md:m-12;
+}
+
+.m-responsive-xl {
+  @apply m-8 sm:m-12 md:m-16;
+}
+
+/* Mobile-optimized grid layouts */
+.grid-responsive-1 {
+  @apply grid-cols-1 sm:grid-cols-2 lg:grid-cols-3;
+}
+
+.grid-responsive-2 {
+  @apply grid-cols-1 sm:grid-cols-2 lg:grid-cols-4;
+}
+
+.grid-responsive-3 {
+  @apply grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
+}
+
+/* Mobile-optimized image scaling */
+.img-responsive {
+  @apply w-full h-auto object-cover;
+  max-height: 200px;
+}
+
+@media (min-width: 640px) {
+  .img-responsive {
+    max-height: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .img-responsive {
+    max-height: 400px;
+  }
+}
+
+/* Mobile-optimized card layouts */
+.card-responsive {
+  @apply bg-white rounded-lg shadow-md p-4 sm:p-6 md:p-8;
+}
+
+.card-responsive-sm {
+  @apply bg-white rounded-lg shadow-md p-3 sm:p-4 md:p-6;
+}
+
+.card-responsive-lg {
+  @apply bg-white rounded-xl shadow-lg p-6 sm:p-8 md:p-12;
+}
+
+/* Mobile-optimized button sizes */
+.btn-responsive-sm {
+  @apply px-3 py-2 text-sm sm:px-4 sm:py-2 sm:text-base;
+}
+
+.btn-responsive-md {
+  @apply px-4 py-2 text-base sm:px-6 sm:py-3 sm:text-lg;
+}
+
+.btn-responsive-lg {
+  @apply px-6 py-3 text-lg sm:px-8 sm:py-4 sm:text-xl;
+}
+
+/* Mobile-optimized navigation */
+.nav-responsive {
+  @apply flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4;
+}
+
+/* Mobile-optimized hero sections */
+.hero-responsive {
+  @apply h-screen flex items-center justify-center text-center px-4 sm:px-6 lg:px-8;
+}
+
+.hero-title-responsive {
+  @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight;
+}
+
+.hero-subtitle-responsive {
+  @apply text-lg sm:text-xl md:text-2xl text-gray-600 max-w-2xl mx-auto;
+}
+
+/* Mobile-optimized section spacing */
+.section-responsive {
+  @apply py-12 sm:py-16 md:py-20 lg:py-24;
+}
+
+.section-responsive-sm {
+  @apply py-8 sm:py-12 md:py-16 lg:py-20;
+}
+
+.section-responsive-lg {
+  @apply py-16 sm:py-20 md:py-24 lg:py-32;
+}
+
+/* Mobile-optimized container */
+.container-responsive {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Mobile-optimized flex layouts */
+.flex-responsive-col {
+  @apply flex flex-col sm:flex-row;
+}
+
+.flex-responsive-wrap {
+  @apply flex flex-wrap gap-2 sm:gap-4;
+}
+
+/* Mobile-optimized text alignment */
+.text-responsive-center {
+  @apply text-center sm:text-left;
+}
+
+.text-responsive-left {
+  @apply text-left sm:text-center;
+}
+
+/* Mobile-optimized visibility */
+.hidden-mobile {
+  @apply hidden sm:block;
+}
+
+.visible-mobile {
+  @apply block sm:hidden;
+}
+
+.hidden-tablet {
+  @apply hidden md:block;
+}
+
+.visible-tablet {
+  @apply block md:hidden;
+}
+
+/* Mobile-optimized aspect ratios */
+.aspect-responsive-square {
+  @apply aspect-square sm:aspect-video;
+}
+
+.aspect-responsive-video {
+  @apply aspect-video;
+}
+
+.aspect-responsive-portrait {
+  @apply aspect-[3/4] sm:aspect-[4/5];
+}
+
+/* Mobile-optimized shadows */
+.shadow-responsive {
+  @apply shadow-sm sm:shadow-md md:shadow-lg;
+}
+
+.shadow-responsive-lg {
+  @apply shadow-md sm:shadow-lg md:shadow-xl;
+}
+
+/* Mobile-optimized borders */
+.border-responsive {
+  @apply border border-gray-200 sm:border-gray-300;
+}
+
+.rounded-responsive {
+  @apply rounded-lg sm:rounded-xl md:rounded-2xl;
+}
+
+/* Mobile-optimized transitions */
+.transition-responsive {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+/* Mobile-optimized hover effects */
+.hover-responsive {
+  @apply hover:scale-105 hover:shadow-lg transition-all duration-300;
+}
+
+/* Mobile-optimized focus states */
+.focus-responsive {
+  @apply focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+}
+
+/* Mobile-optimized backdrop blur */
+.backdrop-responsive {
+  @apply backdrop-blur-sm sm:backdrop-blur-md;
+}
+
+/* Mobile-optimized gradients */
+.gradient-responsive {
+  @apply bg-gradient-to-r from-blue-600 to-purple-600;
+}
+
+/* Mobile-optimized animations */
+.animate-responsive {
+  @apply animate-pulse sm:animate-bounce;
+}
+
+/* Mobile-optimized overflow */
+.overflow-responsive {
+  @apply overflow-hidden sm:overflow-visible;
+}
+
+/* Mobile-optimized z-index */
+.z-responsive {
+  @apply z-10 sm:z-20 md:z-30;
+}
+
+/* Mobile-optimized positioning */
+.relative-responsive {
+  @apply relative sm:absolute;
+}
+
+/* Mobile-optimized width */
+.w-responsive {
+  @apply w-full sm:w-auto;
+}
+
+/* Mobile-optimized height */
+.h-responsive {
+  @apply h-auto sm:h-screen;
+}
+
+/* Mobile-optimized min-height */
+.min-h-responsive {
+  @apply min-h-screen;
+}
+
+/* Mobile-optimized max-width */
+.max-w-responsive {
+  @apply max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl;
+}
+
+/* Mobile-optimized gap */
+.gap-responsive {
+  @apply gap-2 sm:gap-4 md:gap-6 lg:gap-8;
+}
+
+/* Mobile-optimized justify */
+.justify-responsive {
+  @apply justify-center sm:justify-start;
+}
+
+/* Mobile-optimized items */
+.items-responsive {
+  @apply items-center sm:items-start;
+}
+
+/* Mobile-optimized text size for specific elements */
+.mobile-text-tiny {
+  @apply text-xs;
+}
+
+.mobile-text-small {
+  @apply text-sm;
+}
+
+.mobile-text-medium {
+  @apply text-base;
+}
+
+.mobile-text-large {
+  @apply text-lg;
+}
+
+.mobile-text-xl {
+  @apply text-xl;
+}
+
+/* Tablet-specific optimizations */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .tablet-grid-2 {
+    @apply grid-cols-2;
+  }
+  
+  .tablet-text-sm {
+    @apply text-sm;
+  }
+  
+  .tablet-p-sm {
+    @apply p-4;
+  }
+  
+  .tablet-m-sm {
+    @apply m-4;
+  }
+}
+
+/* Mobile-specific optimizations */
+@media (max-width: 639px) {
+  .mobile-grid-1 {
+    @apply grid-cols-1;
+  }
+  
+  .mobile-text-xs {
+    @apply text-xs;
+  }
+  
+  .mobile-p-xs {
+    @apply p-2;
+  }
+  
+  .mobile-m-xs {
+    @apply m-2;
+  }
+  
+  .mobile-hidden {
+    @apply hidden;
+  }
+  
+  .mobile-block {
+    @apply block;
+  }
+}
